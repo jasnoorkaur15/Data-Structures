@@ -1,0 +1,77 @@
+//EXPERIMENT 04
+//PRN-24070123049
+//Bitwise operations 
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int a=12;
+    int b=16;
+    int bitwise_and=a&b;
+    cout<<bitwise_and<<endl;
+   
+    int bitwise_or=a|b;
+    cout<<bitwise_or<<endl;
+   
+    int bitwise_xor=a^b;
+    cout<<bitwise_xor<<endl;
+   
+    int bitwise_not=~a;
+    cout<<bitwise_not<<endl;
+   
+    int bitwise_leftshift=a<<2;
+    cout<<bitwise_leftshift<<endl;
+   
+    int bitwise_rightshift=a>>b;
+    cout<<bitwise_rightshift<<endl;
+   
+}
+
+//Set bitwise operations
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int bit_to_be_set;
+    int i=80;
+    int set;
+   
+    cout<<"enter bit position to be reset:";
+    cin>>bit_to_be_set;
+    set=i|(1<<bit_to_be_set);
+    cout<<set;
+   
+    return 0;
+}
+//output-
+
+
+//ReSet bitwise operations
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int bit_to_be_reset;
+    int i=80;
+    int reset;
+   
+    cout<<"enter bit position to be reset:";
+    cin>>bit_to_be_reset;
+    reset=i&(~1<<bit_to_be_reset);
+    cout<<reset;
+   
+    return 0;
+}
+
+//output
+enter bit position to be reset:4
+64
+
+
+
+
+
